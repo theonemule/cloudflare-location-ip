@@ -28,18 +28,23 @@ This script automates updating the external IP address of a Zero Trust location 
    
   **Get Your Cloudflare API Token:**
    - Log in to the Cloudflare Dashboard.
-   - Go to **My Profile** > **API Tokens**.
+   - Go to **Manage Account** > **Account API Tokens**.
    - Click **Create Token**.
-   - Use the template **Edit Gateway Locations** or create a custom token with permissions:
-     - Zone: Read
-     - Account: Edit Gateway Locations
+   - Click **Get Started** under Create Custom Token.'
+   
+	 - Give it a meaningful name: "Location Update"
+	 - For **Permissions**, select Account, Zero Trust, Edit
+	 - Click **Continue to summary**
+	 - Click **Create Token**
+	 - Click **Copy** next to the created token.
+	 
+   
    - Copy the generated token.
 
  **Find Your Cloudflare Account ID:**
    - Log in to the Cloudflare Dashboard.
-   - Select your account.
    - Go to **Overview**.
-   - Your **Account ID** is listed on the right-hand side.
+   - Your **Account ID** is part of the URL: https://dash.cloudflare.com/{ACCOUNT_ID}
 
  **Retrieve Your Location ID:**
    - Use the following API call to list all Gateway locations:
