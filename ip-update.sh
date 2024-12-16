@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Configurations
-API_TOKEN="GCLACbcOpaCJagofw8APJ5hvtWL3GiQ1xZsXQKo1"
-ACCOUNT_ID="c7065cb68d9917bfb58484d2dadf3b76"
-LOCATION_ID="42372b25b2a44f58b7424a717b71df45"
+API_TOKEN="your_cloudflare_api_token"
+ACCOUNT_ID="your_account_id"
+LOCATION_ID="your_location_id"
 CURRENT_IP_FILE="/ip/current_ip.txt"
 API_URL="https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/gateway/locations/$LOCATION_ID"
 
